@@ -88,6 +88,15 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.8.0"
+  percent_indicator:
+    dependency: "direct main"
+    description:
+      path: "."
+      ref: HEAD
+      resolved-ref: "0f60a7c3c67f8ae060b95b6f0b6144693f5df15c"
+      url: "https://github.com/COVIDSafePlace/flutter_percent_indicator.git"
+    source: git
+    version: "3.0.0-nullsafety.9001"
   sky_engine:
     dependency: transitive
     description: flutter

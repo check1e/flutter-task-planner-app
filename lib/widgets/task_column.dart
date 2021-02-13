@@ -6,10 +6,10 @@ class TaskColumn extends StatelessWidget {
   final String title;
   final String subtitle;
   TaskColumn({
-    this.icon,
-    this.iconBackgroundColor,
-    this.title,
-    this.subtitle,
+    required this.icon,
+    required this.iconBackgroundColor,
+    required this.title,
+    required this.subtitle,
   });
   @override
   Widget build(BuildContext context) {

@@ -8,10 +8,10 @@ class ActiveProjectsCard extends StatelessWidget {
   final String subtitle;
 
   ActiveProjectsCard({
-    this.cardColor,
-    this.loadingPercent,
-    this.title,
-    this.subtitle,
+    required this.cardColor,
+    required this.loadingPercent,
+    required this.title,
+    required this.subtitle,
   });
 
   @override
@@ -46,7 +46,7 @@ class ActiveProjectsCard extends StatelessWidget {
                 backgroundColor: Colors.white10,
                 progressColor: Colors.white,
                 center: Text(
-                  '${(loadingPercent*100).round()}%',
+                  '${(loadingPercent * 100).round()}%',
                   style: TextStyle(
                       fontWeight: FontWeight.w700, color: Colors.white),
                 ),

@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 
-
 class TaskContainer extends StatelessWidget {
   final String title;
   final String subtitle;
   final Color boxColor;
-  
+
   TaskContainer({
-    this.title, this.subtitle, this.boxColor,
+    required this.title,
+    required this.subtitle,
+    required this.boxColor,
   });
 
   @override
@@ -15,7 +16,6 @@ class TaskContainer extends StatelessWidget {
     return Container(
       margin: EdgeInsets.symmetric(vertical: 15.0),
       padding: EdgeInsets.all(20.0),
-      
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
@@ -26,7 +26,6 @@ class TaskContainer extends StatelessWidget {
               fontWeight: FontWeight.w700,
             ),
           ),
-          
           Padding(
             padding: const EdgeInsets.only(top: 10.0),
             child: Text(
@@ -41,8 +40,7 @@ class TaskContainer extends StatelessWidget {
         ],
       ),
       decoration: BoxDecoration(
-          color: boxColor,
-          borderRadius: BorderRadius.circular(30.0)),
+          color: boxColor, borderRadius: BorderRadius.circular(30.0)),
     );
   }
 }

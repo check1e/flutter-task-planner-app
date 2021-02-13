@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:percent_indicator/percent_indicator.dart';
+import 'package:percent_indicator/percent_indicator.dart'
+    show CircularPercentIndicator;
+import 'package:percent_indicator/circle/enums/circular_stroke_cap.dart'
+    show CircularStrokeCap;
 
 class ActiveProjectsCard extends StatelessWidget {
   final Color cardColor;
@@ -19,7 +23,6 @@ class ActiveProjectsCard extends StatelessWidget {
     return Expanded(
       flex: 1,
       child: Container(
-        
         margin: EdgeInsets.symmetric(vertical: 10.0),
         padding: EdgeInsets.all(15.0),
         height: 200,
@@ -35,7 +38,7 @@ class ActiveProjectsCard extends StatelessWidget {
               padding: const EdgeInsets.all(10.0),
               child: CircularPercentIndicator(
                 animation: true,
-                radius: 75.0,
+                diameter: 75.0,
                 percent: loadingPercent,
                 lineWidth: 5.0,
                 circularStrokeCap: CircularStrokeCap.round,

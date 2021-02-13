@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_task_planner_app/screens/calendar_page.dart';
 import 'package:flutter_task_planner_app/theme/colors/light_colors.dart';
-// import 'package:percent_indicator/percent_indicator.dart';
+import 'package:percent_indicator/percent_indicator.dart';
 import 'package:flutter_task_planner_app/widgets/task_column.dart';
 import 'package:flutter_task_planner_app/widgets/active_project_card.dart';
 import 'package:flutter_task_planner_app/widgets/top_container.dart';
@@ -60,11 +60,6 @@ class HomePage extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: <Widget>[
-                          SizedBox(
-                            height: 90,
-                            width: 90,
-                          ),
-                          /*
                           CircularPercentIndicator(
                             radius: 90.0,
                             lineWidth: 5.0,
@@ -81,7 +76,6 @@ class HomePage extends StatelessWidget {
                               ),
                             ),
                           ),
-                          */
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: <Widget>[

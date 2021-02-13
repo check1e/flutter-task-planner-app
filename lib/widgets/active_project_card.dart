@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-// import 'package:percent_indicator/percent_indicator.dart';
+import 'package:percent_indicator/percent_indicator.dart';
 
 class ActiveProjectsCard extends StatelessWidget {
   final Color cardColor;
@@ -19,6 +19,7 @@ class ActiveProjectsCard extends StatelessWidget {
     return Expanded(
       flex: 1,
       child: Container(
+        
         margin: EdgeInsets.symmetric(vertical: 10.0),
         padding: EdgeInsets.all(15.0),
         height: 200,
@@ -32,12 +33,7 @@ class ActiveProjectsCard extends StatelessWidget {
           children: <Widget>[
             Padding(
               padding: const EdgeInsets.all(10.0),
-              child: SizedBox(
-                height: 75,
-                width: 75,
-              ),
-              /*
-              CircularPercentIndicator(
+              child: CircularPercentIndicator(
                 animation: true,
                 radius: 75.0,
                 percent: loadingPercent,
@@ -51,7 +47,6 @@ class ActiveProjectsCard extends StatelessWidget {
                       fontWeight: FontWeight.w700, color: Colors.white),
                 ),
               ),
-              */
             ),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,

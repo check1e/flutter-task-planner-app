@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_task_planner_app/screens/calendar_page.dart';
 import 'package:flutter_task_planner_app/theme/colors/light_colors.dart';
-import 'package:percent_indicator/percent_indicator.dart'
+import 'package:percent_indicator_nullsafe/percent_indicator_nullsafe.dart'
     show CircularPercentIndicator;
-import 'package:percent_indicator/circle/enums/circular_stroke_cap.dart'
+import 'package:percent_indicator_nullsafe/circle/enums/circular_stroke_cap.dart'
     show CircularStrokeCap;
-import 'package:percent_indicator/circle/enums/arc_type.dart' show ArcType;
+import 'package:percent_indicator_nullsafe/circle/enums/arc_type.dart'
+    show ArcType;
 
 import 'package:flutter_task_planner_app/widgets/task_column.dart';
 import 'package:flutter_task_planner_app/widgets/active_project_card.dart';

@@ -88,15 +88,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.8.0"
-  percent_indicator:
+  percent_indicator_nullsafe:
     dependency: "direct main"
     description:
-      path: "."
-      ref: HEAD
-      resolved-ref: "0f60a7c3c67f8ae060b95b6f0b6144693f5df15c"
-      url: "https://github.com/COVIDSafePlace/flutter_percent_indicator.git"
-    source: git
-    version: "3.0.0-nullsafety.9001"
+      name: percent_indicator_nullsafe
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "4.0.1-nullsafety.01.259.9.beta"
   sky_engine:
     dependency: transitive
     description: flutter
@@ -159,4 +157,4 @@ packages:
     source: hosted
     version: "2.1.0"
 sdks:
-  dart: ">=2.12.0-0.0 <3.0.0"
+  dart: ">=2.12.0-259.9.beta <3.0.0"
